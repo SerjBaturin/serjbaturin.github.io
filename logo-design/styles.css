@@ -1,3 +1,91 @@
-h1 {
-  color: #6868;
-}
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap&subset=cyrillic");
+/* =================
+    COMMON
+ ================= */
+:root {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
+  margin: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit; }
+
+.container {
+  max-width: 1000px;
+  width: 100%; }
+
+/* =================
+    HEADER    
+ ================= */
+.header {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: url("./img/fon.jpg") no-repeat right;
+  color: white; }
+
+.header-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 3em; }
+
+.header-logo {
+  width: 50%;
+  font-size: 2em; }
+
+.header-logo span {
+  font-weight: 100; }
+
+.header-logo strong {
+  font-weight: 900; }
+
+.header-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-size: 1.2rem;
+  font-weight: 300; }
+
+.header-contacts a,
+.header-contacts span {
+  color: white;
+  text-decoration: none; }
+
+.header-utp {
+  width: 100%;
+  font-size: 4em;
+  font-weight: 900;
+  text-align: center;
+  padding: 3em 0; }
+
+.header-utp span {
+  color: aqua; }
+
+/* =================
+    
+ ================= */
+/* =================
+    
+ ================= */
