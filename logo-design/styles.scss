@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap&subset=cyrillic');
+@import 'slick';
 /* =================
     COMMON
  ================= */
@@ -94,8 +95,17 @@ $main-opacity: .8;
   justify-content: center;
   i {
     font-size: 2em;
-    opacity: $main-opacity;
+    animation: change 5s infinite ease-in-out alternate;
   }
+}
+
+@keyframes change {
+  0% {color:#F78FAD;}
+  20% {color: #41D8DD;}
+  40% {color: #54E38E;}
+  60% {color: #E13680;}
+  80% {color: #6DE195;}
+  100% {color: #A16BFE;}
 }
 
 @media screen and (max-width: 599px) {
@@ -103,7 +113,7 @@ $main-opacity: .8;
     background: linear-gradient(to right, #313574, #4f58d4);
   }
   .header-utp {
-    font-size: 4.5em;
+    font-size: 4.3em;
   }
 }
 
@@ -128,8 +138,77 @@ $main-opacity: .8;
 
 
 /* =================
-    
+    SLIDER
  ================= */
+ 
+ .slider {
+   display: flex;
+   justify-content: center;
+ }
+
+ .slider-main-img {
+    display: flex;
+  }
+
+  .slider-caption {
+    color: #323676;
+    text-align: center;
+  }
+
+  .bike { 
+    .main-img:first-child {background: #fff;}
+    .main-img:last-child {background: #000;}
+  }
+  .five { 
+    .main-img:first-child {background: yellow;}
+    .main-img:last-child {background: #6868;}
+  }
+  .iblag { 
+    .main-img:first-child {background: rgb(145, 243, 240);}
+    .main-img:last-child {background: linear-gradient(to right, purple, blue);}
+  }
+  .city { 
+    .main-img:first-child {background: linear-gradient(to bottom, #fff, rgb(219, 219, 219));}
+    .main-img:last-child {background: linear-gradient(45deg, purple, blue);}
+  }
+
+@media screen and (max-width: 599px) {
+  .slider-wrapper {
+    padding: 2em 0;
+  }
+  .main-img:first-child,
+  .main-img:last-child {
+    padding: 1em;
+  }
+  .main-img img,
+  .main-img img {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 600px) {
+  .slider-wrapper {
+    padding: 2em 0;
+  }
+  .main-img:first-child,
+  .main-img:last-child {
+    padding: 4em;
+  }
+  .main-img img,
+  .main-img img {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 900px) {
+  .slider-wrapper {
+    padding: 4em 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .slider-wrapper {
+    padding: 6em 0;
+  }
+}
+
 /* =================
     
  ================= */

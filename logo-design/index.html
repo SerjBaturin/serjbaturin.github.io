@@ -5,12 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="styles.css">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="js/slick/slick.css"/>
+  <link rel="stylesheet" href="styles.css">
   <title>LOGO DESIGN</title>
 </head>
 
 <body>
+  <!-- HEADER START -->
   <header class="header">
     <div class="container">
       <div class="header-wrapper">
@@ -40,6 +42,81 @@
       </div>
     </div>
   </header>
+  <!-- HEADER END -->
+
+  <!-- SLIDER START -->
+  <div class="slider">
+    <div class="container">
+      <div class="slider-wrapper">
+        <div class="slider-container">
+          <!-- CITY -->
+          <div class="slider-item">
+              <div class="slider-main-img city">
+                <div class="main-img">
+                  <img src="img/logo/city8.png" alt="logo">
+                </div>
+                <div class="main-img">
+                    <img src="img/logo/city7.png" alt="logo">
+                </div>
+              </div>
+              <p class="slider-caption">Логотип для риэлторской компании "Мой Город"</p>
+            </div>
+          <!-- BIKE -->
+          <div class="slider-item">
+            <div class="slider-main-img bike">
+              <div class="main-img">
+                <img src="img/logo/bike.png" alt="logo">
+              </div>
+              <div class="main-img">
+                  <img src="img/logo/bike2.png" alt="logo">
+              </div>
+            </div>
+            <p class="slider-caption">Логотип для велопрокатной компании</p>
+          </div>
+          <!-- FIVE -->
+          <div class="slider-item">
+              <div class="slider-main-img five">
+                <div class="main-img">
+                  <img src="img/logo/five.png" alt="logo">
+                </div>
+                <div class="main-img">
+                    <img src="img/logo/mono2.png" alt="logo">
+                </div>
+              </div>
+              <p class="slider-caption">Логотип для компании доставки кофе Five</p>
+            </div>
+          <!-- IBlAG -->
+          <div class="slider-item">
+              <div class="slider-main-img iblag">
+                <div class="main-img">
+                  <img src="img/logo/iblag1.png" alt="logo">
+                </div>
+                <div class="main-img">
+                    <img src="img/logo/iblag2.png" alt="logo">
+                </div>
+              </div>
+              <p class="slider-caption">Логотип для он-лайн справочника iblag.ru</p>
+            </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- SLIDER END -->
+
+  <script src="js/jQuery341.min.js"></script>
+  <script src="js/slick/slick.min.js"></script>
+  <script>
+    $('.slider-container').slick({
+      autoplay: true,
+      speed: 800,
+      arrows: false,
+      dots: true,
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1
+      });
+    </script>
 </body>
 
 </html>
