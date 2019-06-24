@@ -78,9 +78,14 @@
     width: 10px;
     height: 10px; } }
 
+@media (min-width: 600px) {
+  .slick-dots li button:before {
+    width: 10px;
+    height: 10px; } }
+
 .slick-dots li.slick-active button:before {
   opacity: 1;
-  background-color: #666; }
+  background-color: #323676; }
 
 /* =================
     COMMON
@@ -244,6 +249,11 @@ body {
   display: -ms-flexbox;
   display: flex; }
 
+.slider-main-img-mockup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
 .slider-caption {
   color: #323676;
   text-align: center; }
@@ -255,17 +265,17 @@ body {
   background: #000; }
 
 .five .main-img:first-child {
-  background: yellow; }
+  background: linear-gradient(45deg, #D8B593, white); }
 
 .five .main-img:last-child {
-  background: #6868; }
+  background: linear-gradient(-225deg, #6868, rgba(102, 85, 34, 0.1)); }
 
 .iblag .main-img:first-child {
-  background: #91f3f0; }
+  background: linear-gradient(45deg, #f9ffc7, white); }
 
 .iblag .main-img:last-child {
-  background: -webkit-gradient(linear, left top, right top, from(purple), to(blue));
-  background: linear-gradient(to right, purple, blue); }
+  background: -webkit-gradient(linear, left top, left bottom, from(#1e4a83), to(#070118));
+  background: linear-gradient(to bottom, #1e4a83, #070118); }
 
 .city .main-img:first-child {
   background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#dbdbdb));
@@ -274,25 +284,37 @@ body {
 .city .main-img:last-child {
   background: linear-gradient(45deg, purple, blue); }
 
+.woman .main-img:first-child {
+  background: -webkit-gradient(linear, left top, left bottom, from(#081e3b), to(#070118));
+  background: linear-gradient(to bottom, #081e3b, #070118); }
+
+.woman .main-img:last-child {
+  background: linear-gradient(45deg, #764D6F, #47256e); }
+
 @media screen and (max-width: 599px) {
   .slider-wrapper {
     padding: 2em 0; }
-  .main-img:first-child,
-  .main-img:last-child {
+  .main-img {
     padding: 1em; }
-  .main-img img,
   .main-img img {
-    width: 100%; } }
+    width: 100%; }
+  .slider-main-img-mockup img {
+    width: 50%;
+    height: 50%; } }
 
 @media screen and (min-width: 600px) {
   .slider-wrapper {
     padding: 2em 0; }
-  .main-img:first-child,
-  .main-img:last-child {
+  .main-img {
     padding: 4em; }
-  .main-img img,
   .main-img img {
-    width: 100%; } }
+    width: 100%; }
+  .slider-main-img-mockup img {
+    width: 50%;
+    height: 50%; }
+  .slider-main-img-mockup img {
+    width: 50%;
+    height: 50%; } }
 
 @media screen and (min-width: 900px) {
   .slider-wrapper {

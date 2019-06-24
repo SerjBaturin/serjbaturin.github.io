@@ -86,11 +86,17 @@
 @media (max-width: 599px) {
   .slick-dots li button:before {
     width: 10px;
-    height: 10px;;
+    height: 10px;
+  }
+}
+@media (min-width: 600px) {
+  .slick-dots li button:before {
+    width: 10px;
+    height: 10px;
   }
 }
 
 .slick-dots li.slick-active button:before {
   opacity: 1;
-  background-color: #666;
+  background-color: #323676;
 }
