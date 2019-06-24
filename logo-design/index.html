@@ -37,8 +37,10 @@
           ЛОГО<br /><span>ДИЗАЙН</span>
         </h1>
 
-        <div class="header-arrow">
-          <i class="fa fa-angle-down" aria-hidden="true"></i>
+        <div class="arrow">
+          <a href="#slider" class="scroll">
+            <i class="fa fa-angle-down" aria-hidden="true"></i>
+          </a>
         </div>
       </div>
     </div>
@@ -46,7 +48,7 @@
   <!-- HEADER END -->
 
   <!-- SLIDER START -->
-  <div class="slider">
+  <div class="slider" id="slider">
     <div class="container">
       <div class="slider-wrapper">
         <div class="slider-container">
@@ -116,10 +118,35 @@
           </div>
 
         </div>
+        <div class="arrow">
+            <a href="#terms" class="scroll">
+              <i class="fa fa-angle-down" aria-hidden="true"></i>
+            </a>
+          </div>
       </div>
     </div>
   </div>
   <!-- SLIDER END -->
+
+  <!-- TERMS START -->
+  <div class="terms" id="terms">
+    <div class="container">
+      <div class="terms-wrapper">
+        <h2 class="terms-head">Условия работы и стоимость</h2>
+        <ul class="terms-list">
+          <li class="terms-item">Lorem ipsum dolor sit.</li>
+          <li class="terms-item">Lorem ipsum dolor sit.</li>
+          <li class="terms-item">Lorem ipsum dolor sit.</li>
+          <li class="terms-item">Lorem ipsum dolor sit.</li>
+          <li class="terms-item">Lorem ipsum dolor sit.</li>
+          <li class="terms-item">Lorem ipsum dolor sit.</li>
+          <li class="terms-item">Lorem ipsum dolor sit.</li>
+          <li class="terms-item">Lorem ipsum dolor sit.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- TERMS END -->
 
   <script src="js/jQuery341.min.js"></script>
   <script src="js/slick/slick.min.js"></script>
@@ -149,6 +176,20 @@
         }
       ]
     });
+  </script>
+  <script>
+    // SMOOTH SCROLL
+    $('.scroll').on( 'click', function(){ 
+    var el = $(this);
+    var dest = el.attr('href'); // получаем направление
+    if(dest !== undefined && dest !== '') { // проверяем существование
+        $('html').animate({ 
+    	    scrollTop: $(dest).offset().top // прокручиваем страницу к требуемому элементу
+        }, 500 // скорость прокрутки
+        );
+    }
+    return false;
+});
   </script>
 </body>
 
