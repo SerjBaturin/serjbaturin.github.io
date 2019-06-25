@@ -21,7 +21,18 @@ body {
   width: 100%;
 }
 
+// ARROWS
+
 .arrow {
+  display: flex;
+  justify-content: center;
+  i {
+    font-size: 2em;
+    color: $main-font-color;
+  }
+}
+
+.header-wrapper .arrow {
   display: flex;
   justify-content: center;
   i {
@@ -161,6 +172,10 @@ $main-font-color: #323676;
     text-align: center;
   }
 
+  .lawyer { 
+    .main-img:first-child {background: linear-gradient(to bottom, #fff, rgb(219, 219, 219));}
+    .main-img:last-child {background: linear-gradient(to bottom, rgb(8, 30, 59), rgb(7, 1, 24));}
+  }
   .bike { 
     .main-img:first-child {background: #fff;}
     .main-img:last-child {background: #000;}
@@ -234,7 +249,6 @@ $main-font-color: #323676;
   .terms {
     display: flex;
     justify-content: center;
-    height: 100vh;
     background-color: rgb(250, 250, 250);
   }
 
@@ -274,5 +288,69 @@ $main-font-color: #323676;
 }
 
  /* =================
-    
+    QUESTIONS
  ================= */
+
+ .questions {
+  display: flex;
+  justify-content: center;
+}
+
+.questions-head {
+  color:  $main-font-color;
+}
+
+@media screen and (max-width: 599px) {
+.questions-wrapper {
+  padding: 2em 0;
+}
+}
+@media screen and (min-width: 600px) {
+.questions-wrapper {
+  padding: 2em 0;
+}
+}
+@media screen and (min-width: 900px) {
+.questions-wrapper {
+  padding: 4em 0;
+}
+}
+@media screen and (min-width: 1200px) {
+.questions-wrapper {
+  padding: 6em 0;
+}
+}
+
+ /* =================
+    FOOTER
+ ================= */
+ .footer {
+  display: flex;
+  justify-content: center;
+  background-color: $main-font-color;
+}
+
+.footer-head {
+  color: rgb(250, 250, 250);
+}
+
+@media screen and (max-width: 599px) {
+.footer-wrapper {
+  padding: 2em 0;
+}
+}
+@media screen and (min-width: 600px) {
+.footer-wrapper {
+  padding: 2em 0;
+}
+}
+@media screen and (min-width: 900px) {
+.footer-wrapper {
+  padding: 4em 0;
+}
+}
+@media screen and (min-width: 1200px) {
+.footer-wrapper {
+  padding: 6em 0;
+}
+}

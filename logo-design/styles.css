@@ -114,6 +114,16 @@ body {
       -ms-flex-pack: center;
           justify-content: center; }
   .arrow i {
+    font-size: 2em; }
+
+.header-wrapper .arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .header-wrapper .arrow i {
     font-size: 2em;
     -webkit-animation: change 5s infinite ease-in-out alternate;
             animation: change 5s infinite ease-in-out alternate; }
@@ -259,6 +269,14 @@ body {
   color: #323676;
   text-align: center; }
 
+.lawyer .main-img:first-child {
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#dbdbdb));
+  background: linear-gradient(to bottom, #fff, #dbdbdb); }
+
+.lawyer .main-img:last-child {
+  background: -webkit-gradient(linear, left top, left bottom, from(#081e3b), to(#070118));
+  background: linear-gradient(to bottom, #081e3b, #070118); }
+
 .bike .main-img:first-child {
   background: #fff; }
 
@@ -335,7 +353,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 100vh;
   background-color: #fafafa; }
 
 .terms-head {
@@ -366,5 +383,62 @@ body {
     padding: 6em 0; } }
 
 /* =================
-    
+    QUESTIONS
  ================= */
+.questions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.questions-head {
+  color: #323676; }
+
+@media screen and (max-width: 599px) {
+  .questions-wrapper {
+    padding: 2em 0; } }
+
+@media screen and (min-width: 600px) {
+  .questions-wrapper {
+    padding: 2em 0; } }
+
+@media screen and (min-width: 900px) {
+  .questions-wrapper {
+    padding: 4em 0; } }
+
+@media screen and (min-width: 1200px) {
+  .questions-wrapper {
+    padding: 6em 0; } }
+
+/* =================
+    FOOTER
+ ================= */
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #323676; }
+
+.footer-head {
+  color: #fafafa; }
+
+@media screen and (max-width: 599px) {
+  .footer-wrapper {
+    padding: 2em 0; } }
+
+@media screen and (min-width: 600px) {
+  .footer-wrapper {
+    padding: 2em 0; } }
+
+@media screen and (min-width: 900px) {
+  .footer-wrapper {
+    padding: 4em 0; } }
+
+@media screen and (min-width: 1200px) {
+  .footer-wrapper {
+    padding: 6em 0; } }
