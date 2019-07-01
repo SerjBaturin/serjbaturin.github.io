@@ -400,6 +400,7 @@ body {
   top: 0;
   width: 100%;
   padding: 1em;
+  margin-top: 0;
   background: #323676;
   color: rgba(255, 255, 255, 0.8);
   text-align: center; }
