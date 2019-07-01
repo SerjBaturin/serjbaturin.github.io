@@ -17,6 +17,7 @@ function watch () {
 
   gulp.watch('./*.scss', css)
   gulp.watch('./index.html').on('change', browserSync.reload)
+  gulp.watch('./js/js.js').on('change', browserSync.reload)
   gulp.watch('./*.scss').on('change', browserSync.reload)
 }
 
