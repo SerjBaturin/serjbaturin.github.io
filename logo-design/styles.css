@@ -413,6 +413,11 @@ body {
     width: 150px;
     height: 150px; } }
 
+@media screen and (min-width: 600px) {
+  .works-img {
+    width: 150px;
+    height: 150px; } }
+
 @media screen and (min-width: 1200px) {
   .works-img {
     width: 250px;
