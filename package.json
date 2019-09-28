@@ -1,0 +1,27 @@
+{
+  "name": "serjbaturin.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SerjBaturin/serjbaturin.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SerjBaturin/serjbaturin.github.io/issues"
+  },
+  "homepage": "https://github.com/SerjBaturin/serjbaturin.github.io#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.0",
+    "gulp-cli": "^2.2.0",
+    "gulp-sass": "^4.0.2"
+  }
+}

@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron:400,500,700,900|Roboto:100,300,400,500,700,900&display=swap');
+
+/*
+===============
+CONSTANTS
+===============
+*/
+$padd-599: 1em;
+$padd-600: 1em;
+$padd-900: 1em;
+$padd-1200: 1em;
+$text-color: #333333;
+/*
+===============
+MIXINS
+===============
+*/
+@mixin flex-column($align-items) {
+  display: flex;
+  flex-direction: column;
+  align-items: $align-items;
+}
+@mixin flex-row($align-items) {
+  display: flex;
+  align-items: $align-items;
+}
+
+/*
+===============
+COMMON
+===============
+*/
+:root {
+  font-size: 1em;
+  font-family: 'Roboto', sans-serif;
+  color: $text-color;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+body {
+  @include flex-column(center);
+}
+
+h1,
+h2,
+h3,
+p,
+a {
+  margin: 0;
+  color: $text-color;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 599px) {
+  :root {
+    font-size: .9em;
+  }
+}
+@media screen and (min-width: 600px) {
+  :root {
+    font-size: 1em;
+  }
+}
+@media screen and (min-width: 900px) {
+  :root {
+    font-size: 1.2em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  :root {
+    font-size: 1.5em;
+  }
+}
+
+/*
+===============
+HEADER
+===============
+*/
+
+header {
+  @include flex-row(flex-end);
+  width: 100%;
+  img {
+    width: 600px;
+    margin-left: auto;
+    order: 1;
+  }
+  .header__text {
+    @include flex-column(flex-start);
+    font-weight: 300;
+    span {
+      margin-top: 1em;
+      margin-bottom: 1em;
+      padding: .2em;
+      background-color: $text-color;
+      color: #fff;
+    }
+    .icons {
+      @include flex-row(flex-start);
+      margin-top: 1em;
+      a {
+        margin-right: .5em;
+      }
+      .resume {
+        background-color: #d32222;
+        font-weight: 300;
+        color: #fff;
+        border-radius: 100px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 599px) {
+  header {
+    min-height: 100vh;
+    justify-content: center;
+    @include flex-column(center);
+    img {
+      width: 200px;
+      margin-left: 0;
+      order: 0;
+    }
+    .header__text {
+      @include flex-column(center);
+      margin-top: 1.5em;
+      span {
+        padding: .4em;
+      }
+      a {
+        font-size: 1.3em;
+      }
+      .icons {
+        @include flex-row(flex-start);
+        margin-top: 1.5em;
+        img {
+          width: 30px;
+          height: 30px;
+        }
+        .resume {
+          padding: .45em;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 600px) {
+  header {
+    max-width: 600px;
+    img {
+      width: 300px;
+    }
+    .header__text {
+      .icons {
+        img {
+          width: 38px;
+          height: 38px;
+        }
+        .resume {
+          padding: .6em;
+          font-size: .95rem;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 900px) {
+  header {
+    max-width: 900px;
+    img {
+      width: 400px;
+    }
+    .header__text {
+      .icons {
+        img {
+          width: 45px;
+          height: 45px;
+        }
+        .resume {
+          padding: .6em;
+          font-size: .95rem;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  header {
+    max-width: 1200px;
+    img {
+      width: 600px;
+    }
+    .header__text {
+      .icons {
+        img {
+          width: 50px;
+          height: 50px;
+        }
+        .resume {
+          padding: .9em;
+          font-size: .7rem;
+        }
+      }
+    }
+  }
+}
+
+/*
+===============
+PROJECTS
+===============
+*/
+
+@media screen and (max-width: 599px) {
+}
+@media screen and (min-width: 600px) {
+}
+@media screen and (min-width: 900px) {
+}
+@media screen and (min-width: 1200px) {
+}
+
+/*
+===============
+FOOTER
+===============
+*/
+
+@media screen and (max-width: 599px) {
+}
+@media screen and (min-width: 600px) {
+}
+@media screen and (min-width: 900px) {
+}
+@media screen and (min-width: 1200px) {
+}
