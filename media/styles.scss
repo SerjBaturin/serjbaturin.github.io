@@ -235,6 +235,7 @@ PROJECTS
     .project {
       @include flex-row(center);
       width: 100%;
+      margin-bottom: 2em;
       .project-img {
         width: 50%;
         h3 {
@@ -286,6 +287,9 @@ PROJECTS
         padding-left: 0;
         padding-right: 2em;
       }
+    }
+    .project:last-child {
+      margin-bottom: 0;
     }
   }
 }
