@@ -16,7 +16,7 @@ COMMON
 */
 :root {
   font-size: 1em;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #333333;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
@@ -228,7 +228,7 @@ PROJECTS
         align-self: flex-start;
     margin-top: 1em;
     margin-bottom: 1em;
-    font-family: 'Orbitron';
+    font-family: "Orbitron";
     letter-spacing: 1px; }
   .projects .projects-wrapper {
     width: 100%; }
@@ -268,7 +268,7 @@ PROJECTS
       .projects .projects-wrapper .project .description {
         width: 50%;
         padding-left: 2em;
-        text-align: right; }
+        text-align: left; }
         .projects .projects-wrapper .project .description p {
           font-weight: 300; }
     .projects .projects-wrapper .project:nth-child(even) {
