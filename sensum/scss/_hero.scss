@@ -1,0 +1,47 @@
+.hero {
+  @include flex-box-col-center-all();
+  width: 100%;
+  min-height: 90vh;
+  height: 100%;
+  background: url(../img/conf3.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.hero__wrapper {
+  //   @include flex-box-col-center-all();
+}
+.hero__bss-logo {
+}
+.hero__head {
+  font-family: "Roboto", sans-serif;
+  font-size: 4rem;
+  // color: $sensum-color;
+  color: $red-color;
+}
+.hero__utp {
+  font-family: "Roboto";
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+.hero__btn {
+  display: inline-block;
+  margin-top: 1em;
+  padding: 1em;
+  background-color: $red-color;
+  font-weight: 900;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 100px;
+}
+
+@media screen and (max-width: 599px) {
+}
+
+@media screen and (min-width: 600px) {
+}
+
+@media screen and (min-width: 900px) {
+}
+
+@media screen and (min-width: 1200px) {
+}

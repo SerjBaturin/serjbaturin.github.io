@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap&subset=cyrillic");
+
+/* =================
+    MIXINS
+ ================= */
+@mixin flex-box-row-center() {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+@mixin flex-box-col-center() {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@mixin flex-box-col-center-all() {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* =================
+    COMMON
+ ================= */
+
+:root {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  letter-spacing: 1px;
+  box-sizing: content-box;
+}
+
+body {
+  margin: 0;
+  box-sizing: inherit;
+}
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+}
+
+// CONSTANTS
+$sensum-color: #31b693;
+$red-color: #b10820;
+
+/* =================
+    HEADER    
+ ================= */
+@import "scss/header";
+
+/* =================
+    HERO    
+ ================= */
+@import "scss/hero";
+
+/* =================
+    MEDIA
+ ================= */
+@import "scss/media";
+
+/* =================
+    FOOTER
+ ================= */
