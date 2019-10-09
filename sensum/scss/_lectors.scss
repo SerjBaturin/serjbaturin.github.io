@@ -1,0 +1,45 @@
+.lectors {
+  @include flex-just-cont-center();
+  padding-top: 6em;
+  padding-bottom: 6em;
+  background-color: rgb(240, 240, 240);
+}
+.lectors__wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.lectors__head {
+  width: 100%;
+  margin-bottom: 2em;
+}
+.lectors__lector {
+  display: flex;
+  width: 40%;
+  margin-bottom: 2em;
+}
+.lector__img {
+  width: 100px;
+  height: 100px;
+  border-radius: 200px;
+}
+.lector__caption {
+  margin-left: 2em;
+}
+.lector__name {
+}
+.lector__theme {
+  font-weight: 300;
+}
+
+@media screen and (max-width: 599px) {
+}
+
+@media screen and (min-width: 600px) {
+}
+
+@media screen and (min-width: 900px) {
+}
+
+@media screen and (min-width: 1200px) {
+}

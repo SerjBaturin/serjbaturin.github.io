@@ -1,13 +1,17 @@
 .media {
-  display: flex;
-  justify-content: center;
+  @include flex-just-cont-center();
 }
 
 .media__wrapper {
   @include flex-box-col-center-all();
+  padding: 0px;
+  margin: 0px;
 }
 
 .media__main__video {
+  display: flex;
+  width: 1000px;
+  height: 765px;
 }
 
 @media screen and (max-width: 599px) {

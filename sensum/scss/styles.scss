@@ -19,6 +19,10 @@
   justify-content: center;
   align-items: center;
 }
+@mixin flex-just-cont-center() {
+  display: flex;
+  justify-content: center;
+}
 /* =================
     COMMON
  ================= */
@@ -60,5 +64,11 @@ $red-color: #b10820;
 @import "scss/media";
 
 /* =================
-    FOOTER
+    LECTORS
  ================= */
+@import "scss/lectors";
+
+/* =================
+    HOLIDAY
+ ================= */
+@import "scss/holiday";

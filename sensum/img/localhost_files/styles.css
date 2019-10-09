@@ -91,8 +91,7 @@ header {
   background-image: url(../img/conf3.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
-  background-attachment: fixed; }
+  background-size: cover; }
 
 .hero__head {
   font-family: "Roboto", sans-serif;
@@ -138,102 +137,19 @@ header {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
-  padding: 0px;
-  margin: 0px; }
-
-.media__main__video {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 1000px;
-  height: 765px; }
+          align-items: center; }
 
 /* =================
     LECTORS
  ================= */
-.lectors {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-top: 6em;
-  padding-bottom: 6em;
-  background-color: #f0f0f0; }
-
-.lectors__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-
-.lectors__head {
-  width: 100%;
-  margin-bottom: 2em; }
-
 .lectors__lector {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 40%;
-  margin-bottom: 2em; }
-
-.lector__img {
-  width: 100px;
-  height: 100px;
-  border-radius: 200px; }
-
-.lector__caption {
-  margin-left: 2em; }
-
-.lector__theme {
-  font-weight: 300; }
-
-/* =================
-    HOLIDAY
- ================= */
-.holiday {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-top: 6em;
-  padding-bottom: 6em;
-  background-image: url(../img/celebration.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover; }
-
-.holiday__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  border: 1px solid black; }
 
-.holiday__head {
-  background-color: rgba(0, 0, 0, 0.5);
-  font-size: 3rem;
-  text-align: center;
-  color: #fff; }
+.lector__img {
+  border-radius: 200px; }
