@@ -88,7 +88,7 @@ header {
   width: 100%;
   min-height: 90vh;
   height: 100%;
-  background-image: url(../img/conf3.png);
+  background-image: url(./img/conf3.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -211,7 +211,7 @@ header {
           align-items: center;
   padding-top: 6em;
   padding-bottom: 6em;
-  background-image: url(../img/celebration.jpg);
+  background-image: url(./img/celebration.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
