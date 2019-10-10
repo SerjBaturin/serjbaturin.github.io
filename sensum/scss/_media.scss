@@ -1,11 +1,19 @@
 .media {
   @include flex-just-cont-center();
+  padding-top: 6em;
+  padding-bottom: 8em;
+  background-color: #f0f0f0;
 }
 
 .media__wrapper {
   @include flex-box-col-center-all();
   padding: 0px;
   margin: 0px;
+}
+
+.media__head {
+  align-self: flex-start;
+  margin-bottom: 2em;
 }
 
 .media__main__video {

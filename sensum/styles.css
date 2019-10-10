@@ -123,7 +123,10 @@ header {
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  padding-top: 6em;
+  padding-bottom: 8em;
+  background-color: #f0f0f0; }
 
 .media__wrapper {
   display: -webkit-box;
@@ -141,6 +144,11 @@ header {
           align-items: center;
   padding: 0px;
   margin: 0px; }
+
+.media__head {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-bottom: 2em; }
 
 .media__main__video {
   display: -webkit-box;
@@ -237,3 +245,28 @@ header {
   font-size: 3rem;
   text-align: center;
   color: #fff; }
+
+/* =================
+    CLIENTS
+ ================= */
+.clients {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 6em;
+  padding-bottom: 6em; }
+
+.clients__head {
+  margin-bottom: 2em; }
+
+.clients__logo {
+  width: auto !important;
+  height: 50px !important;
+  margin-left: 2em; }

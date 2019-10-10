@@ -1,0 +1,13 @@
+.clients {
+  @include flex-box-col-center();
+  padding-top: 6em;
+  padding-bottom: 6em;
+}
+.clients__head {
+  margin-bottom: 2em;
+}
+.clients__logo {
+  width: auto !important;
+  height: 50px !important;
+  margin-left: 2em;
+}

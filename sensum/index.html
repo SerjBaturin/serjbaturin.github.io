@@ -11,9 +11,9 @@
       integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
       crossorigin="anonymous"
     /> -->
-    <!-- <link rel="stylesheet" href="js/slick/slick.css" /> -->
+    <link rel="stylesheet" href="js/slick/slick.css" />
     <link rel="stylesheet" href="styles.css" />
-    <title></title>
+    <title>Система Главбух</title>
   </head>
 
   <body>
@@ -28,7 +28,7 @@
     </header>
     <!-- HEADER END -->
 
-    <!-- HERO -->
+    <!-- HERO START -->
     <section class="hero">
       <div class="container">
         <div class="hero__wrapper">
@@ -57,7 +57,7 @@
     </section>
     <!-- HERO END -->
 
-    <!-- LECTORS -->
+    <!-- LECTORS START -->
     <section class="lectors">
       <div class="container">
         <div class="lectors__wrapper">
@@ -169,7 +169,7 @@
     </section>
     <!-- LECTORS END -->
 
-    <!-- HOLIDAY -->
+    <!-- HOLIDAY START -->
     <section class="holiday">
       <div class="container">
         <div class="holiday__wrapper">
@@ -182,10 +182,11 @@
     </section>
     <!-- HOLIDAY END -->
 
-    <!-- MEDIA -->
+    <!-- MEDIA START -->
     <section class="media">
       <div class="container">
         <div class="media__wrapper">
+          <h2 class="media__head">Система Главбух</h2>
           <iframe
             width="560"
             height="315"
@@ -211,6 +212,68 @@
     </section>
     <!-- MEDIA END -->
 
+    <!-- CLIENTS START-->
+    <section class="clients">
+      <div class="container">
+        <div class="clients__wrapper">
+          <h2 class="clients__head">Нам доверяют</h2>
+          <div class="clients__slider">
+            <img
+              src="img/clients-logo/ESKB.png"
+              alt="logo"
+              class="clients__logo"
+            />
+            <img
+              src="img/clients-logo/bashneftgeo.svg"
+              alt="logo"
+              class="clients__logo"
+            />
+            <img
+              src="img/clients-logo/bashspirt.png"
+              alt="logo"
+              class="clients__logo"
+            />
+            <img
+              src="img/clients-logo/ozna.png"
+              alt="logo"
+              class="clients__logo"
+            />
+            <img
+              src="img/clients-logo/rn-transport.png"
+              alt="logo"
+              class="clients__logo"
+            />
+            <img
+              src="img/clients-logo/rosenergoatom.png"
+              alt="logo"
+              class="clients__logo"
+            />
+            <img
+              src="img/clients-logo/salavat.png"
+              alt="logo"
+              class="clients__logo"
+            />
+            <img
+              src="img/clients-logo/sibintech.svg"
+              alt="logo"
+              class="clients__logo"
+            />
+            <img
+              src="img/clients-logo/tretitrest.svg"
+              alt="logo"
+              class="clients__logo"
+            />
+            <img
+              src="img/clients-logo/ufanet.png"
+              alt="logo"
+              class="clients__logo"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CLIENTS END -->
+
     <!-- FOOTER START -->
     <footer class="footer" id="footer">
       <div class="container">
@@ -219,52 +282,18 @@
     </footer>
     <!-- FOOTER END -->
 
-    <!-- <script src="js/jQuery341.min.js"></script>
+    <script src="js/jQuery341.min.js"></script>
     <script src="js/slick/slick.min.js"></script>
-    <script src="js/js.js"></script> -->
-    <!-- <script>
-    $('.slider-container').slick({
-      autoplay: true,
-      speed: 800,
-      arrows: false,
-      dots: true,
-      infinite: true,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      responsive: [
-        {
-          breakpoint: 9000,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2
-          }
-        },
-        {
-          breakpoint: 900,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        }
-      ]
-    });
-  </script> -->
-    <!-- <script>
-      // SMOOTH SCROLL
-      $(".scroll").on("click", function() {
-        var el = $(this);
-        var dest = el.attr("href"); // получаем направление
-        if (dest !== undefined && dest !== "") {
-          // проверяем существование
-          $("html").animate(
-            {
-              scrollTop: $(dest).offset().top, // прокручиваем страницу к требуемому элементу
-            },
-            500, // скорость прокрутки
-          );
-        }
-        return false;
+    <script>
+      $(".clients__slider").slick({
+        autoplay: true,
+        speed: 1000,
+        arrows: false,
+        dots: false,
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
       });
-    </script> -->
+    </script>
   </body>
 </html>
