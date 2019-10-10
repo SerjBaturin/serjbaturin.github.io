@@ -21,6 +21,12 @@ body {
   max-width: 1000px;
   width: 100%; }
 
+@media screen and (max-width: 599px) {
+  :root {
+    font-size: 0.8em; }
+  .container {
+    max-width: 90%; } }
+
 /* =================
     HEADER    
  ================= */
@@ -68,6 +74,14 @@ header {
   font-weight: 900;
   color: #31b693; }
 
+@media screen and (max-width: 599px) {
+  .header__partner,
+  .header__cta {
+    display: none; }
+  .header__phone {
+    margin-left: auto;
+    font-size: 1.2rem; } }
+
 /* =================
     HERO    
  ================= */
@@ -114,6 +128,12 @@ header {
   text-decoration: none;
   border-radius: 100px; }
 
+@media screen and (max-width: 599px) {
+  .hero__head {
+    font-size: 1.5rem; }
+  .hero__utp {
+    font-size: 1rem; } }
+
 /* =================
     MEDIA
  ================= */
@@ -156,6 +176,11 @@ header {
   display: flex;
   width: 1000px;
   height: 765px; }
+
+@media screen and (max-width: 599px) {
+  .media__main__video {
+    width: 100%;
+    height: 56.25%; } }
 
 /* =================
     LECTORS
@@ -203,6 +228,21 @@ header {
 .lector__theme {
   font-weight: 300; }
 
+@media screen and (max-width: 599px) {
+  .lectors__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -ms-flex-wrap: none;
+        flex-wrap: none; }
+  .lectors__lector {
+    width: 100%;
+    margin-bottom: 2em; } }
+
 /* =================
     HOLIDAY
  ================= */
@@ -245,6 +285,10 @@ header {
   font-size: 3rem;
   text-align: center;
   color: #fff; }
+
+@media screen and (max-width: 599px) {
+  .holiday__head {
+    font-size: 1.3rem; } }
 
 /* =================
     CLIENTS

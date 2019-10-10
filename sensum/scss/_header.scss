@@ -27,6 +27,14 @@ header {
 }
 
 @media screen and (max-width: 599px) {
+  .header__partner,
+  .header__cta {
+    display: none;
+  }
+  .header__phone {
+    margin-left: auto;
+    font-size: 1.2rem;
+  }
 }
 
 @media screen and (min-width: 600px) {

@@ -23,6 +23,10 @@
 }
 
 @media screen and (max-width: 599px) {
+  .media__main__video {
+    width: 100%;
+    height: 56.25%;
+  }
 }
 
 @media screen and (min-width: 600px) {

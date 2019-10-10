@@ -48,6 +48,25 @@ body {
 $sensum-color: #31b693;
 $red-color: #b10820;
 
+// ADAPTIVE
+@media screen and (max-width: 599px) {
+  :root {
+    font-size: 0.8em;
+  }
+  .container {
+    max-width: 90%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+}
+
+@media screen and (min-width: 900px) {
+}
+
+@media screen and (min-width: 1200px) {
+}
+
 /* =================
     HEADER    
  ================= */

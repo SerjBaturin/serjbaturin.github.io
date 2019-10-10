@@ -37,6 +37,14 @@
 }
 
 @media screen and (max-width: 599px) {
+  .hero__head {
+    font-size: 1.5rem;
+  }
+  .hero__utp {
+    font-size: 1rem;
+  }
+  .hero__btn {
+  }
 }
 
 @media screen and (min-width: 600px) {
