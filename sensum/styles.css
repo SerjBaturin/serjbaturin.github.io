@@ -104,6 +104,7 @@ header {
   width: 100%;
   min-height: 90vh;
   height: 100%;
+  background-image: url(./img/fon1.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -188,7 +189,8 @@ header {
 .media__head {
   -ms-flex-item-align: start;
       align-self: flex-start;
-  margin-bottom: 2em; }
+  margin-bottom: 2em;
+  color: #31b693; }
 
 .media__main__video {
   display: -webkit-box;
@@ -336,3 +338,55 @@ header {
   width: auto !important;
   height: 50px !important;
   margin-left: 2em; }
+
+/* =================
+    FOOTER
+ ================= */
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding-top: 6em;
+  padding-bottom: 6em;
+  background-color: #31b693; }
+
+.footer__organization {
+  margin-bottom: 1em;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: #fff; }
+
+.footer__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.footer__cta {
+  margin-left: auto;
+  margin-right: 1em;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: #fff; }
+
+.footer__phone {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: #fff; }
