@@ -1,5 +1,8 @@
 header {
   @include flex-box-col-center();
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid $sensum-color;
 }
 .header__wrapper {
   @include flex-box-row-center();
@@ -7,8 +10,7 @@ header {
   // border: 1px solid black;
 }
 .header__logo {
-  height: 25px;
-  margin-left: 1em;
+  height: 50px;
 }
 .header__partner {
   margin-left: 1em;
@@ -19,9 +21,9 @@ header {
   color: $sensum-color;
 }
 .header__phone {
-  margin-left: 1em;
+  margin-left: auto;
   margin-right: 1em;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 900;
   color: $sensum-color;
 }

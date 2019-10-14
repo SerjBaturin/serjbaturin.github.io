@@ -19,11 +19,14 @@
   <body>
     <!-- HEADER START -->
     <header class="header">
-      <div class="header__wrapper">
-        <img src="img/logo/sensum.png" alt="logo" class="header__logo" />
-        <span class="header__partner">Золотой партнёр Актион-МЦФЭР</span>
-        <span class="header__cta">Мы всегда рады Вашему звонку:</span>
-        <div class="header__phone">8 (800) 333-77-13</div>
+      <div class="container">
+        <div class="header__wrapper">
+          <a href="http://sensum.ru/" target="_blanc">
+            <img src="img/logo/sensum.png" alt="logo" class="header__logo" />
+          </a>
+          <span class="header__partner">Золотой партнёр Актион-МЦФЭР</span>
+          <div class="header__phone">8 (800) 333-77-13</div>
+        </div>
       </div>
     </header>
     <!-- HEADER END -->
@@ -32,30 +35,47 @@
     <section class="hero">
       <div class="container">
         <div class="hero__wrapper">
-          <img
+          <!-- <img
             src="img/logo/bss-logo.svg"
             alt="bss-logo"
             class="hero__bss-logo"
-          />
+          /> -->
+          <p class="hero__utp">
+            Участвуй в Конференции<br />
+            получи <b>гарантированный приз</b> – доступ к
+            <b>Системе Главбух</b> ВИП-версия на 1 месяц<br />
+            выиграй
+            <b>ГОДОВОЙ доступ Системы Главбух!</b>
+            <img src="img/logo/bss-logo.svg" alt="logo" />
+          </p>
           <h1 class="hero__head">
             IX Ежегодная Всероссийская практическая Конференция
           </h1>
-          <p class="hero__utp">
-            Участвуй в Конференции<br />
-            получи гарантированный приз – доступ к Системе Главбух ВИП-версия на
-            1 месяц<br />
-            а также возможность выиграть
-            <b>ГОДОВОЙ доступ Системы Главбух!</b>
-          </p>
           <a
             href="https://seminar.1gl.ru/seminar/570-vserossiyskaya-prakticheskaya-konferentsiya-buhuchet-i-nalogi-v-2020-godu-otchetnaya?dlr=Array&utm_source=sensum"
             class="hero__btn"
             >ЗАРЕГИСТРИРОВАТЬСЯ</a
           >
+          <div class="hero__location">
+            <p>
+              Одновременно в 30 городах России. УФА готовится побить рекорд по
+              количеству участников. 1200 бухгалтеров со всей Республики
+              соберутся здесь...
+            </p>
+            <img src="img/zal.jpg" alt="" />
+          </div>
         </div>
       </div>
     </section>
     <!-- HERO END -->
+
+    <!-- PAST -->
+    <section class="past">
+      <div class="container">
+        <div class="past__wrapper"></div>
+      </div>
+    </section>
+    <!-- PAST END -->
 
     <!-- LECTORS START -->
     <section class="lectors">
@@ -273,6 +293,11 @@
               alt="logo"
               class="clients__logo"
             />
+            <img
+              src="img/clients-logo/planeta.png"
+              alt="logo"
+              class="clients__logo"
+            />
           </div>
         </div>
       </div>
@@ -282,7 +307,10 @@
     <!-- FOOTER START -->
     <footer class="footer" id="footer">
       <div class="container">
-        <div class="footer-wrapper"></div>
+        <div class="footer-wrapper">
+          <span class="header__cta">Мы всегда рады Вашему звонку:</span>
+          <div class="header__phone">8 (800) 333-77-13</div>
+        </div>
       </div>
     </footer>
     <!-- FOOTER END -->

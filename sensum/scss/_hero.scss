@@ -3,32 +3,47 @@
   width: 100%;
   min-height: 90vh;
   height: 100%;
-  background-image: url(./img/conf3.png);
+  // background-image: url(./img/conf3.png);
+  // background-image: url(./img/zal.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  b {
+    color: $red-color;
+  }
 }
-// .hero__wrapper {
-//   //   @include flex-box-col-center-all();
-// }
-// .hero__bss-logo {
-// }
 .hero__head {
   font-family: "Roboto", sans-serif;
   font-size: 4rem;
-  // color: $sensum-color;
-  color: $red-color;
+  color: $sensum-color;
 }
 .hero__utp {
   font-family: "Roboto";
   font-size: 1.4rem;
   font-weight: 300;
+  img {
+    height: 25px;
+  }
+}
+.hero__location {
+  display: flex;
+  align-items: center;
+  font-family: "Roboto";
+  font-size: 1.4rem;
+  font-weight: 300;
+  p {
+    width: 50%;
+  }
+  img {
+    width: 50%;
+  }
 }
 .hero__btn {
   display: inline-block;
   margin-top: 1em;
   padding: 1em;
+  // background-color: $sensum-color;
   background-color: $red-color;
   font-weight: 900;
   color: #fff;

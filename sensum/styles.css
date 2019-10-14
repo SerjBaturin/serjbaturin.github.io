@@ -40,7 +40,10 @@ header {
           flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #31b693; }
 
 .header__wrapper {
   display: -webkit-box;
@@ -56,8 +59,7 @@ header {
   width: 100%; }
 
 .header__logo {
-  height: 25px;
-  margin-left: 1em; }
+  height: 50px; }
 
 .header__partner {
   margin-left: 1em;
@@ -68,9 +70,9 @@ header {
   color: #31b693; }
 
 .header__phone {
-  margin-left: 1em;
+  margin-left: auto;
   margin-right: 1em;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 900;
   color: #31b693; }
 
@@ -102,21 +104,39 @@ header {
   width: 100%;
   min-height: 90vh;
   height: 100%;
-  background-image: url(./img/conf3.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed; }
+  .hero b {
+    color: #b10820; }
 
 .hero__head {
   font-family: "Roboto", sans-serif;
   font-size: 4rem;
-  color: #b10820; }
+  color: #31b693; }
 
 .hero__utp {
   font-family: "Roboto";
   font-size: 1.4rem;
   font-weight: 300; }
+  .hero__utp img {
+    height: 25px; }
+
+.hero__location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Roboto";
+  font-size: 1.4rem;
+  font-weight: 300; }
+  .hero__location p {
+    width: 50%; }
+  .hero__location img {
+    width: 50%; }
 
 .hero__btn {
   display: inline-block;
@@ -208,7 +228,8 @@ header {
 
 .lectors__head {
   width: 100%;
-  margin-bottom: 2em; }
+  margin-bottom: 2em;
+  color: #31b693; }
 
 .lectors__lector {
   display: -webkit-box;
@@ -308,7 +329,8 @@ header {
   padding-bottom: 6em; }
 
 .clients__head {
-  margin-bottom: 2em; }
+  margin-bottom: 2em;
+  color: #31b693; }
 
 .clients__logo {
   width: auto !important;
