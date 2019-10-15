@@ -1,14 +1,13 @@
 .media {
   @include flex-just-cont-center();
-  padding-top: 6em;
+  padding-top: 8em;
   padding-bottom: 8em;
   background-color: #f0f0f0;
 }
 
 .media__wrapper {
-  @include flex-box-col-center-all();
-  padding: 0px;
-  margin: 0px;
+  // @include flex-box-row-center();
+  display: flex;
 }
 
 .media__head {
@@ -17,17 +16,25 @@
   color: $sensum-color;
 }
 
-.media__main__video {
+.media__main {
   display: flex;
-  width: 1000px;
-  height: 765px;
+  margin-right: 1em;
+}
+.media__sidebar {
+  @include flex-box-col-center();
+}
+.media__main__img {
+  cursor: pointer;
+}
+.media__sidebar__img {
+  width: 100%;
+  cursor: pointer;
+}
+.media__sidebar__img:first-child {
+  margin-bottom: 1em;
 }
 
 @media screen and (max-width: 599px) {
-  .media__main__video {
-    width: 100%;
-    height: 56.25%;
-  }
 }
 
 @media screen and (min-width: 600px) {

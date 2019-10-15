@@ -1,0 +1,32 @@
+.modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+.modal__wrapper {
+  @include flex-box-col-center-all();
+  width: 100%;
+  height: 100%;
+
+  video {
+    display: flex;
+    align-self: center;
+    width: 75%;
+  }
+}
+.modal__exit {
+  position: fixed;
+  padding: 0.5rem;
+  right: 10px;
+  top: 10px;
+  font-weight: 900;
+  color: #fff;
+  background-color: $sensum-color;
+  cursor: pointer;
+  z-index: 1000;
+}
