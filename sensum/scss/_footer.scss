@@ -4,31 +4,24 @@ footer {
   padding-top: 6em;
   padding-bottom: 6em;
   background-color: $sensum-color;
-  // background-color: #f0f0f0;
 }
 .footer__wrapper {
+  @include flex-box-col-center();
 }
-.footer__organization {
+.footer__logo {
+  height: 90px;
   margin-bottom: 1em;
-  font-family: "Roboto", sans-serif;
-  font-size: 1.4rem;
-  font-weight: 300;
-  color: #fff;
-}
-.footer__contacts {
-  @include flex-box-row-center();
 }
 .footer__cta {
-  margin-left: auto;
-  margin-right: 1em;
+  margin-bottom: 0.5em;
   font-family: "Roboto", sans-serif;
   font-size: 1.4rem;
-  font-weight: 300;
+  font-weight: 700;
   color: #fff;
 }
 .footer__phone {
   font-family: "Roboto", sans-serif;
-  font-size: 1.4rem;
+  font-size: 2.6rem;
   font-weight: 900;
   color: #fff;
 }

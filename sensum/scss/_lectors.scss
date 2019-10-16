@@ -2,12 +2,10 @@
   @include flex-just-cont-center();
   padding-top: 6em;
   padding-bottom: 6em;
-  background-color: rgb(240, 240, 240);
+  background-color: #f2f2f2;
 }
 .lectors__wrapper {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  @include flex-box-col-center();
 }
 .lectors__head {
   width: 100%;
@@ -16,21 +14,34 @@
 }
 .lectors__lector {
   display: flex;
-  width: 40%;
   margin-bottom: 2em;
 }
 .lector__img {
-  width: 100px;
-  height: 100px;
-  border-radius: 200px;
+  width: 200px;
+  // border-radius: 5px;
 }
 .lector__caption {
   margin-left: 2em;
 }
 .lector__name {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: #555;
 }
-.lector__theme {
+.lector__who {
+  padding-bottom: 1em;
+  font-size: 1.2rem;
   font-weight: 300;
+  color: #555;
+}
+.lector__other__lectors {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #555;
+  b {
+    color: #555;
+  }
 }
 
 @media screen and (max-width: 599px) {

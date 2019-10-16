@@ -189,11 +189,16 @@ header {
           align-items: center; }
 
 .gallery__arrow {
-  padding: 0.5em;
   background-color: rgba(255, 255, 255, 0.5);
   font-size: 2rem;
   color: #31b693;
   cursor: pointer; }
+
+.gallery__arrow:first-child {
+  padding-right: 0.5em; }
+
+.gallery__arrow:last-child {
+  padding-left: 0.5em; }
 
 .gallery__img {
   width: auto !important;
@@ -258,9 +263,9 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 8em;
+  padding-top: 6em;
   padding-bottom: 8em;
-  background-color: #f0f0f0; }
+  background-color: #f2f2f2; }
 
 .media__wrapper {
   display: -webkit-box;
@@ -313,17 +318,19 @@ header {
           justify-content: center;
   padding-top: 6em;
   padding-bottom: 6em;
-  background-color: #f0f0f0; }
+  background-color: #f2f2f2; }
 
 .lectors__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .lectors__head {
   width: 100%;
@@ -334,19 +341,32 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 40%;
   margin-bottom: 2em; }
 
 .lector__img {
-  width: 100px;
-  height: 100px;
-  border-radius: 200px; }
+  width: 200px; }
 
 .lector__caption {
   margin-left: 2em; }
 
-.lector__theme {
-  font-weight: 300; }
+.lector__name {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: #555; }
+
+.lector__who {
+  padding-bottom: 1em;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #555; }
+
+.lector__other__lectors {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #555; }
+  .lector__other__lectors b {
+    color: #555; }
 
 @media screen and (max-width: 599px) {
   .lectors__wrapper {
@@ -379,11 +399,13 @@ header {
           align-items: center;
   padding-top: 6em;
   padding-bottom: 6em;
-  background-image: url(./img/celebration.jpg);
+  background-image: url(./img/celebrationBlur.png);
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
   background-size: cover; }
+  .holiday .hero__btn {
+    font-size: 1.5rem; }
 
 .holiday__wrapper {
   display: -webkit-box;
@@ -401,7 +423,7 @@ header {
           align-items: center; }
 
 .holiday__head {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(49, 182, 147, 0.5);
   font-size: 3rem;
   text-align: center;
   color: #fff; }
@@ -455,35 +477,31 @@ footer {
   padding-bottom: 6em;
   background-color: #31b693; }
 
-.footer__organization {
-  margin-bottom: 1em;
-  font-family: "Roboto", sans-serif;
-  font-size: 1.4rem;
-  font-weight: 300;
-  color: #fff; }
-
-.footer__contacts {
+.footer__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
 
+.footer__logo {
+  height: 90px;
+  margin-bottom: 1em; }
+
 .footer__cta {
-  margin-left: auto;
-  margin-right: 1em;
+  margin-bottom: 0.5em;
   font-family: "Roboto", sans-serif;
   font-size: 1.4rem;
-  font-weight: 300;
+  font-weight: 700;
   color: #fff; }
 
 .footer__phone {
   font-family: "Roboto", sans-serif;
-  font-size: 1.4rem;
+  font-size: 2.6rem;
   font-weight: 900;
   color: #fff; }
