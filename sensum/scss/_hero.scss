@@ -20,9 +20,10 @@
 .hero__utp {
   font-family: "Roboto";
   font-size: 1.4rem;
-  font-weight: 300;
+  font-weight: 700;
+  color: $sensum-color;
   img {
-    height: 25px;
+    height: 50px;
   }
 }
 .hero__location {
@@ -30,7 +31,8 @@
   align-items: center;
   font-family: "Roboto";
   font-size: 1.4rem;
-  font-weight: 300;
+  font-weight: 700;
+  color: #b32b10;
   p {
     width: 50%;
   }
