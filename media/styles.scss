@@ -40,10 +40,12 @@ COMMON
 html,
 body {
   margin: 0;
+  box-sizing: inherit;
 }
 
 body {
   @include flex-column(center);
+  box-sizing: inherit;
 }
 
 h1,
