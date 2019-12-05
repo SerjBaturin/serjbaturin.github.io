@@ -34,3 +34,10 @@ textarea,
 select {
   margin-left: auto;
 }
+
+#textarea_length {
+  margin-left: auto;
+  margin-top: -10px;
+  margin-bottom: 1em;
+  font-size: 0.8rem;
+}
