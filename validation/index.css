@@ -41,3 +41,8 @@ select {
   margin-bottom: 1em;
   font-size: 0.8rem;
 }
+
+.matched-email,
+.matched-password {
+  margin-left: auto;
+}
