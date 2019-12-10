@@ -1,12 +1,20 @@
 body {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   margin: 0;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  width: 100%;
+  text-align: center;
+  color: teal;
 }
 
 svg {
   margin: 1em;
-  border: 1px solid steelblue;
+  background: rgba(255, 255, 255, 0.9);
 }
 .axis path,
 .axis line {
