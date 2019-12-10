@@ -1,0 +1,21 @@
+body {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+svg {
+  margin: 1em;
+  border: 1px solid steelblue;
+}
+.axis path,
+.axis line {
+  stroke: teal;
+  shape-rendering: crispEdges;
+}
+.axis text {
+  font-family: Optima, Futura, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  fill: teal;
+}
