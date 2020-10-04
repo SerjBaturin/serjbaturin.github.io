@@ -3,6 +3,7 @@ const sass = require('gulp-sass')
 const autoprefixer = require('gulp-autoprefixer')
 const browserSync = require('browser-sync').create()
 
+// START
 function css () {
   return gulp.src('./media/*.scss')
   .pipe(sass())
